@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="header">
+        <img src="./img/logo-cabeça.png" alt="cabeça-shelong">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale Conosco</a>
+    </div>
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img src="./img/logo-dragonball.png" alt="Logo do dragonball" height="500" width="500" class="logo-dragonball">
+            <h2>Junte-se aos guerreiros saiyajins!</h2>
+            <br>
+            <p> Você se encontrou em uma situação de emergêcia ou perigo e não soube a quem recorrer?</p>
+            <p>seus problemas acabaram, aqui Goku e seus aliados podem te oferecer ajuda</p>
+            <br>
+
+            <a href="https://api.whatsapp.com/send?phone=559999999999&text=Quero%20falar%20com%20o%20Goku%20e%20os%20Saiyajin!"
+                target="_blank" class="link-whatsapp">
+                <img src="./img/logo-whatsapp.png" alt="Link para whatsapp">
+            </a>
+
+            <button onclick="mostrarform()">ENTRE EM CONTATO</button>
+        </div>
+
+        <div>
+            <img src="./img/imagem-goku-e-equipe.png" alt="Goku e equipe" class="gokuequipe">
+        </div>
+
+    </div>
+
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+
+        <div class="mascara"></div>
+
+    </div>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/PVaALMRIBuG"
+    method="POST"
+    enctype="multipart/form-data">
+        <input placeholder="Seu Nome" type="text" name="nome">
+        <input placeholder="Seu Telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
